@@ -1,0 +1,159 @@
+
+Notes on the coursework pdf:
+
+Worth 20% so it is worth a bit I suppose. 
+
+any mathematical programming package of your choice, e.g., Xpress-IVE, GAMS, Matlab,
+Python, R, etc -- nice so I can use goalang if I want to .
+
+
+Ensure that you take frequent and multiple backups of your work, since excuses concerning
+lost or corrupted files will not be treated sympathetically. -- based af 
+
+    
+5 A4 sides
+of description. Include any extra material as an appendix (e.g., the computer code, output, references, etc.)
+
+
+You are expected to complete the coursework without help from staff; instead, for anything that is unclear
+to you, make valid assumptions and list them.\\
+
+
+Math is such a nice department man, should've picked math for fuck sake.\\
+
+
+I've wanted to go to ulaanbaatar for a while now, National Museum of Mongolia by Uuganbaatar Ninjbat
+
+
+This coursework is fun, but seems so long man what the actual fuck. For fuck sake.
+
+
+
+What to include in your report: Your report should include:
+1. a clear explanation of your model formulation,
+2. a clear description of any assumptions made and your rationale for these,
+3. a brief description of how you solved it,
+4. a presentation of the results,
+5. and, a summary of recommendations and limitations.
+An ideal report will challenge the assumptions made and additionally provide an analysis of what happens
+when these assumptions are removed.
+
+
+Okay this might be the best coursework I've gotten this academic year, heck of the best I've ever had at university.
+
+
+Paper 1: The four strongest at the national museum of Mongolia:
+
+
+‘The Four Strongest’’ (Figures 2 and 3). Its name
+comes from four legendary animals: a dragon, a tiger, a
+lion, and a bird originating in Hindu, Buddhist, and Jain
+mythology that we call Khangarid or Khan-Garuda or just
+Garuda.
+
+
+
+1. How many possible arrangements, or candidate solu-
+tions, are there? That is, in how many ways can a player
+reasonably try to configure the pieces?
+2. How many correct solutions are there?
+3. Is the container the smallest in area or perimeter among
+those in which the items can be packed?
+
+
+
+isn't area related to paramiter, so technicaly it shouldn't matter, the smallest areas means the smallest perimeter surely???
+
+
+THEOREM 1 There are 192 candidate solutions for the
+puzzle of the four strongest.
+PROOF This is an easy combinatorial problem that can be
+solved directly, or via Pólya’s counting technique. Note that
+in the first (say, from the left) position there are eight
+choices (four choices of animal, then two choices of posi-
+tion). There are then six in the second, four in the third, and
+12
+THE MATHEMATICAL INTELLIGENCER
+two in the last. So the number of choices is their product, or
+384. But for each solution, an equivalent solution can be
+obtained by rotating the container through an angle of
+1808, so there are actually only half as many inequivalent
+solutions, that is, 192
+
+
+This makes sense, easy to understand so far. 
+
+
+So, instead
+of trying to solve the puzzle in the abstract mathematical
+way, I suggested solving it via a systematic method of trial
+and error, - cheating an unelegant. 
+
+
+This reminds me of the sphere packing problem I had thought of and maybe I should visit it again sometime.
+
+THEOREM 2 The convex hexagon of smallest area that
+contains four disks of radius r [ 0 arranged linearly (i.e.,
+like a sausage) is obtained as follows. Take a rectangle of
+size 2r ␂ 6r and a regular hexagon with side length p2rffiffi3.
+Divide the hexagon into two equal halves by a line segment
+connecting the midpoints of two opposite sides. Glue each
+half to the rectangle by the side of common length. See
+Figure 9.
+
+
+Last December, I made a presentation at the conference
+explaining the above results, and by doing so, I tried to
+promote the potential role of mathematics in the study of
+museum collections. The reception was positive, and my
+presentation at least provided some knowledge to the
+audience, adding some color and diversity to the
+conference. - this is sooo dead, but certianly better and more interesting that listening to pure math all evening. 
+
+
+
+have been intrigued, then perhaps you should
+visit my country. In that case, I strongly recommend that
+you make another ‘‘mathematical visit’’ to the National
+Museum of Mongolia, which is located at the center of the
+capital city, and perhaps add another piece to the list of
+mathematical studies of Mongolian culture. - live too far away sadly. 
+
+
+ Paper 2 - A Mathematical Programming Approach for Mongolia’s
+“The Four Strongest” puzzle
+
+
+
+ Oh the prof bismark did a paper on this lmao. wants us to critique his work, what in the machoistic tendency is this. 
+
+n the grand
+Indian epic Mahabharata, Drona devises a strategic mili­
+tary formulation called as the Chakravyuha to capture
+the Pandava prince Yudhistra. - what the, I'm starting to suscpect mathmatical papers are a farce at this rate. This is just of unserious compared to hard cs papers.
+
+
+Height of the actual pieces are not relevant as the hexagonal box does not have a lid, only a perimeter so to speak, so height and the 3rd dimension can be ignored (boring!!!!! but easy i guess), so this is a 2d problem
+
+
+ This coursework is soooo dead man.
+
+
+ so bad. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
