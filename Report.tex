@@ -36,7 +36,19 @@
     One of the problems with utilising the inclusion-exclusion and taking this particular approach, is that you have to manually measure the distance, and make a cutout of the irregular shapes, which have scaling errors. Then use these cutouts to try possibe orientations and combinations, manually checking that the shapes do not overlap when you do measure the least width possible. Therefore this process is very time consuming, and isn't feasible for larger amount of shapes. One potential way to mitigate this is, as seen in the first paper \cite{mongolia}, model the shapes as a circle which reduces, the measurements needed, but this is also very inefficient and leaves a lot of gap between the shapes, isn't close to being optimal.\\
 
     
-    So one way to apprach this problem is to in a similar fashion to paper 1 \cite{mongolia}, model the shapes roughly, as a rectangular shape. This simplifies the algorithm needed to fit this in the smallest rectangle possible.\\ 
+    So one way to apprach this problem is to in a similar fashion to paper 1 \cite{mongolia}, model the shapes roughly, as a rectangular shape. This simplifies the algorithm needed to fit this in the smallest rectangle possible. \\
+
+    So the way I went about my initial solution here, is I used golang as the language, due to it's fast execution speed in comparison to Python, and compile times. I started off with modelling what I was going to do and thought about various edge cases and issues that might occur. So firstly I made a struct type in golang, that defines a rectangle. And this struct has two variables, which are height and width. Then utilising this I make a slice of this custom type, reading the measurements from the pdf, in real life this can be automated with computer vision techniques and openCV, this is what shipping containers do \cite{packing}, this information of the height and width was then written in manually, but it can be automated with the methods suggested before.\\
+
+    Next there was the issue of possible permuatations of the rectangular shapes, it can either be 0 or 90 degrees, intuitively you can understand due to the symmetrical properties of rectangles it isn't worth trying to do 180 or 360 degrees, also due to our problem of trying to fit the shapes into the smallest space possible, we can conclude that it's best if the faces of the rectangle are parallel so as to minimise the wastage of space. Given we have four shapes we need to consider all possibilities, so 2 raised to 4, is 16 possibilities, which is lower than the 48 considered in this paper \cite{bismark}, (but yes I understand this is worse off long term, as you can approach it dynamically with inclusion exclusion to get better faster results, given you remeasure for every prime.). \\
+
+    So I wrote a combinatorics function that generates all possible combinations, either 0 or 90 degrees in 4 positions. \\
+
+    INSERT IN PICTURE OF LIST 0,0,0,0 etc ... 90,90,90,90\\
+
+    Then for the sake of simplicity, I use a loop to iterate through these possibilities, and if the angle is 0, I add the original width of the shape, if it is rotated, so 90, I then add the original length of the rectangular shape to the width, and at the end I have a list of possibilities, all the total widths and the max height, of the rectangular prism in each case, which is printed at the end. Then taking the minimum of the value, of the width, I print that out to the screen along with the corresponding height of that rectangular prism, along with the area.\\
+
+    
 
 
 
