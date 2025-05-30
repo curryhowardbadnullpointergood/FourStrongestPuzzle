@@ -1,0 +1,34 @@
+		
+
+
+	So if you think about this, this is supposed to wprk with rectangles with constraints, so a list of points, or main takes in a list of points, 
+	no a list of list of points, and then what it does is a combinatorial check? hmmm, no inclusion exclusion can speed this up. 
+	we can do no this is very easy, all we have to do in this simple case is to add up the width and the length, and need a "placement rule" function. Then a calculate width and calculate length and a calculate area function, hmm those three are easy to write. 
+
+	Now how do I do the placement rule???????
+	So the orientations are either 0 degrees or 90 degrees with rectangles, 
+	placement rule in this basic case should only produce 3 posibilities, so 1, is two together 0 degrees, 
+	2. one 0 degrees, second one 90, 
+	3. one 90 degrees and second one 0, 
+	This covers everything??? 
+	
+	Ah so this is in practise a lot easier than what I was thinking to solve, I can exploit the length and width
+	so I don't even need points, ah I might just brute force this 
+	
+	case 1. -> is 0 add given width to var width , add given length to length 
+	case 2. -> if 90 add given length to var width, add given width to length 
+	
+	really easy, 
+	no possibilities to check 
+	again will be scuffed in the future when I want a slightly better solution. 
+	so you've got two possibilites here, 0 or 90, other options can be scrapped due to the nature of the problem and the properties of the shapes. 
+
+	need a list of permuataions, ah might not be smart to do this as a list, hmmmmm, ah well should be fine for 4 objects 
+	so need either 90 or 0, for 4 positions, this should already exist, need to find a lib function that does this. 
+
+	ah that should work now. 
+
+
+
+
+	 
