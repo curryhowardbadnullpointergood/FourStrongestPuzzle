@@ -1,5 +1,7 @@
 \documentclass[a4paper]{article}
 \usepackage{graphicx} 
+
+
 \usepackage{geometry}
 \usepackage{pdfpages}
 \usepackage{url}
@@ -18,13 +20,34 @@
 
 
 \title{MATH3208 - Optimization Coursework}
-\author{
+\author{Azhagesh
 	Azhagesh, Ashwinkrishna\\
 	\texttt{aa9g22@soton.ac.uk, University of Southampton}
 }
 \begin{document}
     \maketitle
 
+    The probelm of finding the optimal orientation and position of ireegular shaped objects in a finite area, is inherently NP complete \cite{Nonregular} if you approach this with infinite orientations and positions possible, in a finite abritaty 2d space where the shape of the area can change ie rectangle, triangular 2d plane etc. Even if you want to pack irregular objects in a rectangle 2d space, in the most efficient manner, which reduces complexity as 1. it is not an arbitary shape but a rectange, and, which is fixed, the problem is still combinatorial and NP-hard, and more famously we can redefine this beyond the simple four animal puzzle.\\
+
+    I see this in a more general sense, of wanting to fit four irregular shapes inside a rectangular container, and taking into account the various possible orientations and positions these shapes can take. This is a famous problem, as can be classified as a nesting problem \cite{irregular}. Now even if we were to remove the rotational contraint, or orientation, this is still a NP-hard problem, so an algorithm that can find the optimal or close to optimal solution with irregular shaped in a rectangular plane in the most efficient manner possible isn't likely to be polynomial time complexity.\\
+
+    Now the approach takes in \cite{bismark} of using the inclusion-exclusion principal, and using heuristics by measuring the cutouts, the manually trying out all 48 possible permutations and then generating a dataset of the two shapes in the allowed orientations, and then finally using a program to effectively calculate the minimum amount of width needed, such that these shapes fit inside the minimum rectangle possible. This is slightly different from the original paper as the puzzle \cite{mongolia} as that had a hexangonal box where you had to place the pieces, instead of an rectangle.\\
+
+    One of the problems with utilising the inclusion-exclusion and taking this particular approach, is that you have to manually measure the distance, and make a cutout of the irregular shapes, which have scaling errors. Then use these cutouts to try possibe orientations and combinations, manually checking that the shapes do not overlap when you do measure the least width possible. Therefore this process is very time consuming, and isn't feasible for larger amount of shapes. One potential way to mitigate this is, as seen in the first paper \cite{mongolia}, model the shapes as a circle which reduces, the measurements needed, but this is also very inefficient and leaves a lot of gap between the shapes, isn't close to being optimal.\\
+
+    
+    So one way to apprach this problem is to in a similar fashion to paper 1 \cite{mongolia}, model the shapes roughly, as a rectangular shape. This simplifies the algorithm needed to fit this in the smallest rectangle possible.\\ 
+
+
+
+
+
+
+
+    
+
+\bibliographystyle{plain} 
+\bibliography{references}
 
 
 \end{document}
