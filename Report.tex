@@ -48,7 +48,13 @@
 
     Then for the sake of simplicity, I use a loop to iterate through these possibilities, and if the angle is 0, I add the original width of the shape, if it is rotated, so 90, I then add the original length of the rectangular shape to the width, and at the end I have a list of possibilities, all the total widths and the max height, of the rectangular prism in each case, which is printed at the end. Then taking the minimum of the value, of the width, I print that out to the screen along with the corresponding height of that rectangular prism, along with the area.\\
 
-    
+   Now the time complexity of this approach is 2^n, and given this problem is NP-complete it is unlikely for me to come with a polynomial time solution for this problem. I wish I could though. Anyway, this approach can be improved and this is a basic proof of concept. Shipping containers and companies face this problem of efficiently packing irregular sometimes even curved objectes into a 3d space, which is a much harder problem. One way we can improve this is through is by thinking of larger shapes as smaller rectangles then adding rules so that the rectangle in question can't rotate and is fixed to the larger of other rectangle, then when you split up a shape into small enough rectangles you get a pixelated image. So this approach might be a quick and simple way of doing this in OpenCV, however it isn't anywhere close to being as efficient as it can be.\\
+
+
+    So far I've avoided using external libraries, but now I'm going to switch to Python and approach this problem as a ireegular bin packing problem in Python, mainly because it'd be faster to code this in using libraries than maunlly having to reinvent the wheel in golang. (However I do recommend golang, C, or C++ for larger amount of shapes). \\
+
+    Let's do this first before writing about it heh?\\
+
 
 
 
