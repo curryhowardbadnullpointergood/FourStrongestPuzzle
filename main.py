@@ -1,6 +1,7 @@
 from shapely.geometry import Polygon
 from shapely.affinity import rotate, translate
 import matplotlib.pyplot as plt
+import numpy as np 
 
 def create_polygon(points):
     return Polygon(points)
@@ -24,8 +25,8 @@ def greedy_place(shapes, container_width, container_height, rotation_angles=[0, 
             shape_height = maxy - miny
 
             # Sweep across container area
-            for y in range(0, int(container_height - shape_height), 5):
-                for x in range(0, int(container_width - shape_width), 5):
+            for y in np.arange(0, int(container_height - shape_height), 0.1):
+                for x in np.arange(0, int(container_width - shape_width), 0.1):
                     candidate = move_polygon(rotated, x - minx, y - miny)
 
                     # Check collision with all placed shapes
@@ -61,11 +62,11 @@ def plot_shapes(shapes, container_width, container_height):
 # Define some sample shapes
 shape1 = create_polygon([(0,0), (13,0), (16,4), (16,11), (11,11),(11,16),(0,16)])
 shape2 = create_polygon([(0,0), (11,0), (11,11), (7,16),(0,11)])
-#shape3 = create_polygon([(0,0), (7.2,0), (7.2,8.9), (0,8.9)])
-#shape4 = create_polygon([(0,0), (9.1,0), (9.1,7.2), (0,7.2)])
+shape3 = create_polygon([(0,0), (12,0), (18,6), (15,14),(3,14),(0,11)])
+shape4 = create_polygon([(6,0), (12,8), (7,16), (0,11)])
 
 #shapes = [shape1, shape2, shape3, shape4]
-shapes = [shape1, shape2]
+shapes = [shape1, shape2,shape3,shape4]
 # Place shapes into a 100x100 container
 container_w, container_h = 100, 100
 placed = greedy_place(shapes, container_w, container_h)
