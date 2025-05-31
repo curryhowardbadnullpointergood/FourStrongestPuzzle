@@ -59,15 +59,15 @@ def plot_shapes(shapes, container_width, container_height):
 
 
 # Define some sample shapes
-shape1 = create_polygon([(0,0), (8.8,0), (8.8,9.3), (0,9.3)])
-shape2 = create_polygon([(0,0), (9.2,0), (9.2,7.8), (0,7.8)])
-shape3 = create_polygon([(0,0), (7.2,0), (7.2,8.9), (0,8.9)])
-shape4 = create_polygon([(0,0), (9.1,0), (9.1,7.2), (0,7.2)])
+shape1 = create_polygon([(0,0), (13,0), (16,4), (16,11), (11,11),(11,16),(0,16)])
+shape2 = create_polygon([(0,0), (11,0), (11,11), (7,16),(0,11)])
+#shape3 = create_polygon([(0,0), (7.2,0), (7.2,8.9), (0,8.9)])
+#shape4 = create_polygon([(0,0), (9.1,0), (9.1,7.2), (0,7.2)])
 
-shapes = [shape1, shape2, shape3, shape4]
-
+#shapes = [shape1, shape2, shape3, shape4]
+shapes = [shape1, shape2]
 # Place shapes into a 100x100 container
-container_w, container_h = 40, 10
+container_w, container_h = 100, 100
 placed = greedy_place(shapes, container_w, container_h)
 
 # Visualize
