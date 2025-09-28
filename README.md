@@ -1,7 +1,6 @@
 # FourStrongest Puzzle 
 
-An **open-ended mathematical research project** exploring strategies to fit irregular 2D shapes optimally into a container.  
-This project focuses on **packing, orientation, and placement optimization**, combining geometry, heuristics, and algorithmic efficiency.
+An **open-ended mathematical research project** exploring strategies to fit irregular 2D shapes optimally into a container.  This project focuses on **packing, orientation, and placement optimization**, combining geometry, heuristics, and algorithmic efficiency. I approached this as a irregular object packing problem and used various algorithmic stratergies to find solutions. Though this problem is inherently NP hard. There's also a visualised model that you can use to observe the placement of the objects and how it improves in real time. 
 
 ---
 
